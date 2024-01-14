@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enhanced ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Enhanced ToDo List</h1>
+            <img src="brush.svg" alt="Paintbrush Icon">
+        </div>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="clearCompletedTasks()">Clear Completed</button>
+        </div>
+        <div class="task-info">
+            <p>Total Tasks: <span id="totalTasks">1</span></p>
+            <p>Completed Tasks: <span id="completedTasks">0</span></p>
+        </div>
+        <div class="task-list-container">
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-LBgJ6z9KmCvUTtpWQe/QFYRfWL01tK6xW/6zmpPUI1iVawEaU5ssN8Y4E2NG/lpgSn3+Q9fCW0Jq0RSzE8zwRg==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
